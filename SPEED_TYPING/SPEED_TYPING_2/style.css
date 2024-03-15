@@ -1,0 +1,316 @@
+.container{
+	width:60%;
+	margin:auto;
+	overflow:hidden;
+	font-size:1.2em;
+}
+
+.btn{
+	height:40px;
+	width:150px;
+	background:white;
+	color:green;
+}
+
+header, body{
+	font-family:"Tahoma", sans-serif;
+	color:#FFFFFF;
+}
+
+/* Header styles 
+--------------------*/
+header{
+	margin-top:20px;
+}
+
+header section{
+	height:100px;
+	padding: 10px 20px 10px 0;
+}
+
+header nav{
+	float:right;
+	padding-top:10px;
+	position:relative;
+}
+
+.nav-links{
+	display:inline;
+	padding: 10px 15px;
+}
+
+a{
+	color:#e8ed4e;
+	text-decoration:none;
+}
+
+#top-header{
+	box-sizing: border-box;
+	width:80%;
+	background:#161642;
+	border:5px solid #4e4eed;
+	border-radius:10px;
+	margin: auto;
+}
+
+#title{
+	font-family:sans-serif;
+	margin-left:15px;
+	float:left;
+	padding-left:10px;
+	text-align: center;
+}
+.center {
+text-align: center;
+}
+
+/* Body styles
+------------------*/
+
+body{
+	margin:0px;
+	padding:-1px;
+	background-color:#000066;
+	background-image:url(typing.jpg);
+	background-size: cover;
+}
+
+#background-pic {
+	padding-top:10px;
+	text-align:center;
+}
+
+body #quote-api{
+	margin-top: 20px;
+	background-color:#000066;
+	border:5px solid #deeeee;
+	border-radius:7px;
+	padding:20px 50px;
+	min-height: 75px;
+	overflow-wrap: break-word;
+}
+
+#typing-box{
+	height:150px;
+	width:100%;
+	padding:7px 40px;
+	border:5px solid gray;
+	border-radius:5px;
+	font-size:1.2em;
+	margin-top:15px;
+	box-sizing: border-box;
+}
+
+.text-box{
+	text-align:center;
+}
+
+#restart{
+	float:right;
+}
+
+#clock{
+	font-weight:bold;
+	font-size:20px;
+}
+
+#clock > div{
+	width:150px;
+	display:inline-block;
+	padding-right:20px;
+}
+
+
+form input{
+	height:30px;
+	width:220px;
+	margin-right:5px;
+}
+
+/* dropdown menu with browser support*/
+body select { 
+	display: inline-block; 
+	padding: 10px 70px 10px 13px !important;
+	margin-right:5px;
+	max-width: 100%; 
+	height: auto !important; 
+	border: 2px solid silver; 
+	border-radius: 10px; 
+	background: url("download.png") right center no-repeat; 
+	background-size:15px;
+	background-color: #fff; 
+	color: green; 
+	font-size: 12px; 
+	line-height: 16px !important; 
+	appearance: none; 
+	-webkit-appearance: none; 
+	-moz-appearance: none; } 
+
+/* body select.select_box option */ 
+body select option {
+	padding: 0 4px; 
+} 
+
+/* for IE and Edge */ 
+select::-ms-expand { 
+	display: none; 
+} 
+
+select:disabled::-ms-expand {
+	background: #f60; 
+}
+
+/* Footer Styles
+---------------------*/
+#footer-nav {
+	box-sizing: border-box;
+	padding: 15px 0;
+	margin-top: 83px;
+	border-top: 2px solid black;
+	background-color:white;
+	width:100%;
+}
+#footer-nav ul{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+
+#footer-nav li{
+	display:inline-block;
+	font-size:0.7em;
+	padding:5px;
+}
+
+#footer-nav a{
+	color:blue;
+}
+
+#footer-nav div{
+	width:77%;
+	margin:auto;
+	padding-top:3px;
+}
+
+#footer-nav h6{
+	font-size:9px;
+	margin-bottom:1px;
+}
+
+/* Media Queries
+------------------*/
+@media only screen and (min-width: 320px) and (max-width: 750px){
+	.container{
+		width:90%;
+	}
+
+	body{
+		font-size: 0.6em;
+	}
+	#background-pic {
+		width: 90%;
+		margin: auto;
+	}
+
+	header,
+	header #top-header,
+	header #title,
+	header nav,
+	header ul,
+	header li{
+		float:none;
+		border:none;
+		border-radius:0;
+		margin:0;
+		padding:0;
+		height:auto;
+	}
+	header{
+		border-bottom:4px solid black;
+	}
+	header nav {
+		padding-bottom: 10px;
+	}
+	header li{
+		font-size:1.2em;
+		padding:15px;
+	}
+
+	#title h2 {
+		padding-top: 15px;
+		margin-top: 0;
+	}
+
+	a{
+		color:lightgrey;
+	}
+
+	#top-header, header nav{
+		display:block;
+		text-align:center;
+	}
+
+	#top-header{
+		width:100%;
+		background-color:grey;
+	}
+
+	#option-and-btns, #newsletter, #footer-nav{
+		text-align:center;
+	}
+
+
+	body h1 ,#clock{
+		font-size:15px;
+	}
+
+	.container #quote-api{
+		margin-top: 5px;
+		font-size: 15px;
+	}
+
+	.select-box{
+		width:278px;
+		padding: 5px 30px 5px 13px !important;
+		font-size:10px;
+		text-align-last:center;
+
+	}
+
+	.btn{
+		font-size:10px;
+		margin-top:5px;
+		height:30px;
+		width:135px;
+	}
+
+	#restart{
+		float:none;
+	}
+
+	#clock .timer,
+	#clock .WPM,
+	#clock .CPM {
+		margin:0;
+		width:80px;
+		font-size:12px;
+	}
+
+	#clock{
+		text-align:center;
+		margin: 15px 0;
+	}
+
+	#clock div{	
+		margin-top:5px;
+		margin-bottom:5px;
+		padding:0;
+		width:85px;
+	}
+
+	#footer-nav h6{
+		font-size:8px;
+	}
+
+
+}

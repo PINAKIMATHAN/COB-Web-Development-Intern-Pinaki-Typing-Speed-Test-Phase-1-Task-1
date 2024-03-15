@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Typing Speed Test </title>
+	<script src="script.js"> </script>
+	<link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="LOGO.jpg" type="image/svg+xml">
+</head>
+
+
+<!--top header with nav bar-->
+<header>
+<section id="top-header">
+	<div id="title">
+    <div class="center">
+    <p><h2>Speed Typing Test</h2></p></div></div>
+</section>
+</header>
+
+<!-- body with test and timer-->
+<body>
+	<div id="background-pic">
+		<h1> Simple Quick and Accurate Results </h1>
+		<p><b> Welcome to Speed Typing Speed Test! Try and type the different types of texts below as fast as you can!</b> </p>
+	</div>
+	<div class="container"> 
+		<!--create the box to contain the quote-->
+		<section class="quote-box">
+			<div id="quote-api">
+				<p> ARE YOU READY?</p><p> Select the type of test below and click the 'New Text' button to grab a piece of text to begin! </p>
+			</div>
+		</section>
+	</div>
+
+	<div class="container">
+		<!-- create the box for user input-->
+		<section>
+			<textarea id="typing-box" rows="5" placeholder="The clock starts when you begin typing"></textarea>
+		</section>
+		
+		<!--create the timer-->
+		<section id="clock">
+			<div><h1 class="timer">00:00:00</h1></div>
+			<div><h1 class="CPM"> CPM: 00 </h1></div>
+			<div><h1 class="WPM"> WPM: 00 </h1></div>
+		</section>
+		<section id="option-and-btns">
+			<select class="select-box">
+				<option value="alphanumeric">Alphanumeric (Hard Test)</option>
+				<option value="paragraph">Paragraph (Long Test)</option>
+				<option value="words">List of Words (Words Test)</option>
+			</select>
+				<button class="btn" id="new-text"><b>New Text</b></button>
+				<button class="btn" id="restart"><b>Restart</b></button>
+		</section>
+	</div>
+
+    <section class="container" id="footer-nav">
+    	<div>
+	    	<ul>
+				<li class="button"> <a href="#"> Contact </a></li>
+				<li class="button"> <a href="#"> Terms </a></li>
+				<li class="button"> <a href="#"> Privacy Policy </a></li>
+			</ul>
+			<h6> © 2024 Pinaki Speed Typing Test. </h3>
+		</div>
+    </section>
+</body>
+
+</html>
